@@ -63,7 +63,7 @@ def parse_args():
     cmd.add_argument("--track-energy", action="store_true",
                      help="Track energy instead of wall clock time.")
     cmd.add_argument("--profile-heap", action="store_true",
-                     help="Record heap profile via Scalene.")
+                     help="Record heap profile via heaptrack.")
     filter_opts(cmd)
 
     # show
