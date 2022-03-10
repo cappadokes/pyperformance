@@ -62,6 +62,8 @@ def parse_args():
                      "if it doesn't exist")
     cmd.add_argument("--track-energy", action="store_true",
                      help="Track energy instead of wall clock time.")
+    cmd.add_argument("--profile-heap", action="store_true",
+                     help="Record heap profile via Scalene.")
     filter_opts(cmd)
 
     # show

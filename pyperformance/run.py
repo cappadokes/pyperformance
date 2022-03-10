@@ -194,5 +194,7 @@ def get_pyperf_opts(options):
         opts.append('--inherit-environ=%s' % ','.join(options.inherit_environ))
     if options.track_energy:
         opts.append('--track-energy')
+    if options.profile_heap:
+        opts.append('--profile-heap')
 
     return opts
